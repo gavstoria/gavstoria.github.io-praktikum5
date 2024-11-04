@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remind Me App - Manage Schedule and Tasks Easy</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB', 
+                        secondary: '#1D4ED8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-primary">Remind.me</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About us</a>
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">
+                        Download App
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Left Content -->
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                        Manage Schedule and<br/>Task Easy
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Better way manage and schedule to handle highly varied schedules of complex services
+                    </p>
+                    <button class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors">
+                        Download App
+                    </button>
+                </div>
+                <!-- Right Image -->
+                <div class="lg:w-1/2">
+                    <img src="Phone.png" alt="App Interface" class="w-full rounded-lg shadow-lg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white" id="features">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Set a better deadline tasks</h3>
+                    <p class="text-gray-600">Set your deadline as better way with the latest technology in easy manage and schedule.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Manage the tasks so easily</h3>
+                    <p class="text-gray-600">Manage your tasks in an efficient way with our advanced features.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Would'nt miss notifications</h3>
+                    <p class="text-gray-600">Get timely notifications about your tasks and never miss a deadline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Features Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <img src="fitur.png" alt="App Features" class="w-full rounded-2xl shadow-lg"/>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <h2 class="text-3xl font-bold mb-6">Set up task and schedule with best features</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Get best features when you better set the latest managing to make your tasks more organized. Ready to start scheduling?
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Easy to use interface</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Smart notifications</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700">Cross-platform sync</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Left Content -->
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                        Get the Higest Priority<br/>Application notifications
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        the best features makes you better, tiwh the latest technology to meet your needs. Of couse, with such features as organizing schedules and leading assignments, it will make your easier, so get the application NOW !
+                    </p>
+                    <button class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors">
+                        Download Now !
+                    </button>
+                </div>
+                <!-- Right Image -->
+                <div class="lg:w-1/2">
+                    <img src="notif.png" alt="App Interface" class="w-full rounded-lg shadow-lg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">What do they think</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="people2.jpg" alt="User" class="w-12 h-12 rounded-full"/>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Valen Oliv</h4>
+                            <p class="text-gray-600">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"As a professional, time management is crucial. This app helps me stay organized and never miss important deadlines."</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="peoplee3.jpg" alt="User" class="w-12 h-12 rounded-full"/>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Valen Titin</h4>
+                            <p class="text-gray-600">Office Boy</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I've been using the Remind Me app for a month now, and it has completely transformed my productivity! The scheduling features are intuitive, and I love how it sends me reminders just when I need them. It's a must-have for anyone looking to stay organized!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="olang cntq.jpg" alt="User" class="w-12 h-12 rounded-full"/>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">valen cyclop</h4>
+                            <p class="text-gray-600">Cleaning services</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Remind Me has been a game-changer for staying organized! I never miss a deadline or an appointment. Highly recommend for anyone looking to keep their life on track!"</p>
+                </div>
+                
+                <!-- More testimonials can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8 max-w-2xl mx-auto">
+                Download an app now and the various benefits you will get immediately
+            </h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    Download App
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition-colors">
+                    About Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Remind.me</h3>
+                    <p class="text-gray-600 text-sm">Best reminder and schedule app for your daily needs</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Sitemap</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Features</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Advantages</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-600">Easy Manage</li>
+                        <li class="text-gray-600">Stay Notified</li>
+                        <li class="text-gray-600">Best Features</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <p class="text-center text-gray-600 text-sm">
+                    © 2024 Remind.me. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Button (Hamburger) - Add this just below the navbar logo -->
+    <button class="md:hidden absolute right-4 top-5 text-gray-600" id="mobile-menu-button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+    </button>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-40" id="mobile-menu-overlay">
+        <div class="fixed right-0 top-0 bottom-0 w-64 bg-white shadow-lg z-50">
+            <div class="p-4">
+                <button class="absolute right-4 top-4 text-gray-600" id="mobile-menu-close">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                <div class="mt-8 space-y-4">
+                    <a href="#features" class="block text-gray-600 hover:text-primary py-2">Features</a>
+                    <a href="#about" class="block text-gray-600 hover:text-primary py-2">About us</a>
+                    <button class="w-full bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors mt-4">
+                        Download App
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
